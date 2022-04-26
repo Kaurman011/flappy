@@ -75,7 +75,7 @@ function move() {
 		// Change game state and end the game
 		// if collision occurs
 		game_state = 'End';
-		message.innerHTML = 'Press Enter To Restart';
+		message.innerHTML = 'Game Over';
 		message.style.left = '28vw';
 		return;
 		} else {
@@ -115,7 +115,7 @@ function apply_gravity() {
 	if (bird_props.top <= 0 ||
 		bird_props.bottom >= background.bottom) {
 	game_state = 'End';
-	message.innerHTML = 'Press Enter To Restart';
+	message.innerHTML = 'Reload To Restart';
 	message.style.left = '28vw';
 	return;
 	}
